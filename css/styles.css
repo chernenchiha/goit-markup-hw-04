@@ -128,10 +128,31 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: baseline;
 
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+
+.contact-link:hover {
+    fill: var(--accent-color);
 }
 
 .header-link:hover,
@@ -140,20 +161,10 @@ img {
     color: var(--accent-color);
 }
 
-.contact-list {
-    display: flex;
-    margin-left: auto;
-}
 
-/* .contact-item {
-    align-items: center;
-    justify-content: center;
-} */
 
-/* .icon-envelope {
-    margin-right: 10px;
-    fill: var(--icon-color);
-} */
+
+
 
 .contact-list .item:not(:last-child) {
     margin-right: 50px;
@@ -181,9 +192,10 @@ img {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-
-    background-color: var(--footer-background-color);
+  
     text-align: center;
+    background-color: var(--footer-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
 }
 
 .hero-title {
@@ -393,6 +405,15 @@ img {
     background-color: var(--footer-background-color);
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address-container {
+    margin-right: 70px;
+}
+
 .footer .logo {
     display: block;
     margin-bottom: 20px;
@@ -418,6 +439,48 @@ img {
 
 .list-address .item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-icon-container .title {
+    margin-bottom: 20px;
+
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+
+}
+
+.footer-icon-list {
+    display: flex;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.footer-icon-item {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+    fill: var(--white-text-color);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: var(--accent-color);
 }
 
 /*---Portfolio---*/
